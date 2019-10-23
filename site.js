@@ -22,8 +22,6 @@ function doHonk() {
     var honk = honks[Math.floor(Math.random()*honks.length)];
     honk.play(); 
     honkCount++;
-    document.getElementById("count").innerHTML = honkCount;
-
     if (honkCount >= 15) {
         document.getElementById("monster").style = "display:visible; font-size:50pt;";
     }
